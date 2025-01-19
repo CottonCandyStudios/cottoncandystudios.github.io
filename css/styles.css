@@ -21,7 +21,6 @@ body {
 
 /* Nav */
 nav {
-    /* background-image: linear-gradient(to right, #00000086, #3f192a); */
     padding: 1rem 3rem;
     font-size: 1.5rem;
     color: #fff;
@@ -55,16 +54,14 @@ nav ul li {
     border-width: 3px;
     border-style: solid;
     border-image: linear-gradient(45deg, #ff1d7f, #5DEAFC) 1;
-	/* border-radius: 3rem; */
 }
 
 nav ul li:hover {
+    transition: all .5s linear;
     border-image: linear-gradient(45deg, #5DEAFC, #ff1d7f) 1;
-	transition: all .5s linear;
 }
 
 /* Hero Banner */
-
 .banner {
     display: flex;
     flex-direction: column;
