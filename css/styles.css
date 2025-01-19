@@ -1,10 +1,107 @@
 /* Global Styles */
+html,
+body {
+    margin: auto 0;
+    padding: 0;
+    font-family: "Pattaya", serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    height: 100vh;
+    background: white url(/images/banner.png) no-repeat center/cover;
+}
 
 
-
-/* Header */
+/* Nav */
+nav {
+    /* background-image: linear-gradient(to right, #00000086, #3f192a); */
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    color: #fff;
+}
 
 nav a {
-	text-decoration: none;
-	text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:visited,
+nav a:active {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    box-shadow: .1rem .1rem 1rem .2rem rgba(0, 0, 0, 0.5);
+    margin-left: auto;
+    padding: .5rem 1.5rem;
+    transition: all 0.3s linear;
+    background-color: rgba(0, 33, 59, 0.6);
+    cursor: pointer;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(45deg, #ff1d7f, #5DEAFC) 1;
+	/* border-radius: 3rem; */
+}
+
+nav ul li:hover {
+    border-image: linear-gradient(45deg, #5DEAFC, #ff1d7f) 1;
+	transition: all .5s linear;
+}
+
+/* Hero Banner */
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    text-shadow: .1rem .1rem 2rem rgba(0, 0, 0, 1);
+}
+
+.banner h1 {
+    margin-bottom: 0;
+    font-size: 6rem;
+}
+
+.banner hr {
+    width: 50vh;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 1rem;
+}
+
+.banner p {
+    margin-top: 0;
+}
+
+/* Footer */
+footer {
+    font-optical-sizing: auto;
+    padding: .05rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: "Quicksand", serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
 }
