@@ -1,2 +1,2 @@
-# cottoncandystudios.gihub.io
+# cottoncandystudios.github.io
 Cotton Candy Studios
