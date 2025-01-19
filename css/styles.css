@@ -1,40 +1,31 @@
 /* Global Styles */
 html,
 body {
+    box-sizing: border-box;
     margin: auto 0;
     padding: 0;
     font-family: "Pattaya", serif;
     font-style: normal;
     font-weight: 400;
+    width: 100%;
+    height: auto;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    box-sizing: border-box;
-    height: 100vh;
-    background: white url(/images/banner.png) no-repeat center/cover;
+html {
+    background: url(/images/banner.png) no-repeat center center fixed;
+    background-size: cover;
 }
-
 
 /* Nav */
 nav {
     padding: 1rem 3rem;
     font-size: 1.5rem;
-    color: #fff;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-}
-
-nav a:visited,
-nav a:active {
-    color: white;
 }
 
 nav ul {
@@ -56,8 +47,7 @@ nav ul li {
     border-image: linear-gradient(45deg, #ff1d7f, #5DEAFC) 1;
 }
 
-nav ul li:hover {
-    transition: all .5s linear;
+nav ul li:hover {                                 
     border-image: linear-gradient(45deg, #5DEAFC, #ff1d7f) 1;
 }
 
@@ -79,10 +69,11 @@ nav ul li:hover {
 .banner h1 {
     margin-bottom: 0;
     font-size: 6rem;
+    font-weight: inherit;
 }
 
 .banner hr {
-    width: 50vh;
+    width: 50vw;
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 1rem;
 }
@@ -101,4 +92,18 @@ footer {
     font-weight: 300;
     color: #fff;
     text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    nav ul li {
+        margin-right: auto;
+    }
+
+    .banner h1 {
+        font-size: 4rem;
+    }
+
+    .banner p {
+        font-size: 2rem;
+    }
 }
